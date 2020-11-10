@@ -1,0 +1,276 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/03/2020, 09:49:36 PM
+    Author     : itzel
+*/
+body{
+    margin: 0;
+    font-family: 'Fredoka One';
+    font-size: large;
+
+}
+
+header{
+    width: 100%;
+
+}
+.navbarShidori{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  
+
+}
+ul, ol{
+    list-style: none;
+    /*background-color: peachpuff;
+    width: 100vw;*/
+}
+#icon-menu{
+    display: none;
+}
+
+#icnlabel {
+    display: none;
+    padding: 10px;
+    position: absolute;
+
+}
+
+#icnlabel:hover{
+    cursor: pointer;
+
+}
+
+.navbarShidori > ul{
+    margin:0px;
+    padding:0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbarShidori a{
+    display: block;
+    color: white; 
+    padding: 10px 20px; 
+
+    text-decoration: none;
+
+}
+.containerBuscar{
+    background: #8e93d6ad;
+    padding:0;
+    border-radius: 10px;
+    display: flex;
+    position:absolute;
+    left: -260%;
+}
+
+.loginform{
+    background: #bdf3ec;
+    padding:15px;
+    border-radius: 10px;
+    display: flex;
+    position:absolute;
+    right: -15px;
+}
+#user, #pass{
+    font-family: Karla;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    color:gray;
+    border:0;
+    outline: none;
+    width: 300px;
+    margin: 10px 0px 0px 0px;
+}
+#btnInicioSesion{
+    background-color: #39d4c5!important;
+    border-color: #39d4c5;
+    margin-top: 10px;
+}
+.textoR{
+    margin: 10px;
+    text-align: center;
+
+    font-size: small;
+}
+
+
+#linkR{
+    color: #309d93!important;
+    display:inline; 
+}
+#linkR:hover{
+    color:white!important;
+}
+#lebelR{
+    color:#309d93;
+    text-align: center;
+}
+
+#inputBuscar{
+    font-family: Karla;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    color:gray;
+    border:0;
+    outline: none;
+    width: 400px;
+    margin: 10px 0px 10px 10px;
+}
+
+#inputBuscarButton{
+    width: 40px;
+    height: 40px;
+    margin: 15px 10px 10px 10px;
+    outline: none;
+}
+
+.navbarShidori li ul {
+    display:none;
+    padding: 0px;
+    position:absolute;
+    min-width: 140px;
+
+}
+
+.navbarShidori li:hover > ul{
+    display:block;
+}
+
+#inputBuscar:focus{
+    background:buttonface;
+}
+
+#user:focus, #pass:focus{
+    background-color: #e8fcff;
+    display: block;
+}
+
+@media(max-width:768px){
+    #icnlabel {
+        display:block;
+    }
+
+    .navbarShidori{
+        position: absolute;
+        width:50%;
+        margin-left:-50%;
+        margin-top: 50px;
+        transition: all 0.5s;
+    }
+
+    .navbarShidori ul{
+        flex-direction:column;
+
+    }
+
+    .navbarShidori li{
+        background: #68c3c37d;
+        border-top: 1px solid white;
+
+    }
+
+    #icon-menu:checked ~ .navbarShidori{
+        margin-left:10px;
+        width: 50%;
+    }
+    .navbarShidori a{
+
+    }
+    .navbarShidori a:hover{
+        background: #ffaea0;
+        text-decoration: none;
+    }
+    .navbarShidori li ul   {
+        position:relative;
+        padding: 0px;
+
+    }
+    .navbarShidori li ul li{
+
+        background: #7667b3b8;
+    }
+    .navbarShidori li ul li a:hover{
+        background: #c98dfb;
+
+        text-decoration: none;
+
+    }
+    .containerBuscar{
+        position: absolute;
+        float:left;
+        left: 0px;   
+        width: 100%;
+    }
+    #inputBuscar{
+        width: 100%;
+        height: 30%;
+    }
+    #inputBuscarButton{
+        margin-top: 10px ;
+    }
+
+}
+
+@media  (min-width: 768px){
+    .navbarShidoriItem1:hover{
+        color: #309d93; 
+        border-bottom: 3px solid #309d93;
+        /*text-shadow: 2px 2px #ffaea0;*/
+        text-decoration: none;
+    }
+    .navbarShidoriItem2:hover{
+        color: #75bfcf; 
+        border-bottom: 3px solid #75bfcf;
+        /*text-shadow: 2px 2px #ffaea0;*/
+        text-decoration: none;
+
+    }
+    .containerCategorias{
+        background: #94e3dd;
+
+        border-radius:10px;
+    }
+    .navbarShidoriItem3:hover{
+        color: #aaffa6; 
+        border-bottom: 3px solid #aaffa6;
+        /*text-shadow: 2px 2px #ffaea0;*/
+        text-decoration: none;
+    }
+    .navbarShidoriItem4:hover{
+        color: #afbdfa; 
+        border-bottom: 3px solid #afbdfa;
+        /*text-shadow: 2px 2px #ffaea0;*/
+        text-decoration: none;
+    }
+    .navbarShidoriItem5:hover{
+        color: #FF8F83; 
+        border-bottom: 3px solid #ffa6a6;
+        /*text-shadow: 2px 2px #ffaea0;*/
+        text-decoration: none;
+    }
+    .navbarShidori li ul li #linkC:hover{
+        background: #ffaea0;
+        text-decoration: none;
+        border-top: 3px solid white;
+        border-bottom:  3px solid white;
+    }
+
+    .navbarShidori li ul li #linkC{
+
+
+        border-top: 1px solid white;
+    }
+}

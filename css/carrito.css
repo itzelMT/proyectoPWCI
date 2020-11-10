@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6/03/2020, 10:11:37 PM
+    Author     : itzel
+*/
+.video{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top:50%;
+    left:50%;
+    
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    
+}
+.carrito-wrapper {
+    background-color: #ef52526b!important;
+    color: white;
+}
+
+.table thead tr th,
+.table tbody tr td {
+    color: white;
+}
+.container{
+   position: absolute;
+   margin: 50px;
+   left:50%;
+   transform: translateX(-50%);
+   padding-top: 2%;
+  
+}
+#container-producto{
+    background-color: #ef525255!important;
+    }
+
+.media-object{
+    margin:15px;
+}
+.glyphicon{
+    
+}
+
+.btnCarrito{
+    background-color:#c88585e8;
+    border-color: #c88585e8;
+    border-radius:5px;
+}
+
+.btnCarrito:hover{
+    background-color: #F55959;
+    border-color: #F55959;
+}
+.container a {
+    color: #ffe564!important;
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+

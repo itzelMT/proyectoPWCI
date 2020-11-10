@@ -1,0 +1,132 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6/03/2020, 07:56:24 PM
+    Author     : itzel
+*/
+
+.navbarShidori #navUL{
+    
+    position: absolute;
+    z-index: 9999;
+    top:0; 
+    left: 0;
+    right: 0;
+    
+}
+.navbarShidori a{
+    color:#75bfcf!important;
+}
+.video{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -2;
+    opacity:0.6;
+}
+#link{
+    color: #ffe393!important;
+}
+#link:hover{
+    color:white!important;
+}
+.container{
+     position: relative;
+
+}
+.form-box{
+    font-family: Karla;
+    background-color: #fb8989d4!important; 
+    padding: 60px;
+    left: 0;
+    right: 0;
+    margin: 100px auto;
+    width: 50%!important;
+    position: relative;
+    border-radius: 10px;
+}
+.form-box{
+    color:white!important;
+ 
+}
+.form-groupRadio label{
+    position: relative;
+    padding:0 10px 10px 10px;
+}
+.form-groupRadio label input{
+    margin:10px;
+}
+.form-groupImage{
+    text-align: center;
+    margin-bottom:10px;
+}
+#browse{
+    display: none;
+}
+
+#topImage{
+    width:100px;
+    height: 100px;
+   /* transition: opacity 1.3s ease-in-out;*/
+}
+
+
+.checkbox:checked{
+    background-color: #F5E277!important;
+}
+
+#btnInicioSesion{
+       font-family: 'Fredoka One';
+    background-color: #50dec5!important;
+    border-color: #50dec5;
+}
+video::-webkit-media-controls {
+  display: none;
+}
+@media(max-width: 768px){
+    .form-box{
+       width: 100%!important;
+       padding: 50px 30px 30px 30px;
+    }
+}
+
+@media  (min-width: 768px){
+    .navbarShidoriItem1:hover{
+        color: #FF8F83 !important; 
+        border-bottom: 3px solid #ffa6a6;
+        /*text-shadow: 2px 2px #ffaea0;*/
+        text-decoration: none;
+    }
+    .navbarShidoriItem2:hover{
+        color: #94e3dd !important; 
+        border-bottom: 3px solid #94e3dd;
+        /*text-shadow: 2px 2px #ffaea0;*/
+        text-decoration: none;
+
+    }
+    .navbarShidoriItem3:hover{
+        color: #aaffa6 !important; 
+        border-bottom: 3px solid #aaffa6;
+        /*text-shadow: 2px 2px #ffaea0;*/
+        text-decoration: none;
+    }
+    .navbarShidoriItem4:hover{
+        color: #afbdfa !important; 
+        border-bottom: 3px solid #afbdfa;
+        /*text-shadow: 2px 2px #ffaea0;*/
+        text-decoration: none;
+    }
+    .navbarShidoriItem5:hover{
+        color: #FF8F83 !important; 
+        border-bottom: 3px solid #ffa6a6;
+        /*text-shadow: 2px 2px #ffaea0;*/
+        text-decoration: none;
+    }
+
+}
