@@ -22,7 +22,8 @@ and open the template in the editor.
         <div class="container" id="botones">
             <input type="button" value="Lista" id="lol" onclick="regresar();">
             <input type="button" value="Objeto" id="lol" onclick="ocultar();">
-        </div>
+        </div
+        <!-- Contenedor para agregar listas nuevas -->
         <div class="container" id="containerObjeto">
             <div class="form-box">
 
@@ -74,7 +75,7 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-
+        <!-- Contenedor para agregar objetos-->
         <div class="container" id="containerLista">
             <div class="form-box">
                 <div class="needs-validation" novalidate method="POST" action='addList' enctype="multipart/formdata">

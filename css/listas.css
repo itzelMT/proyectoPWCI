@@ -71,7 +71,7 @@ body{
 .lista{
     text-align: center;
     align-content: center;
-    margin:20px;
+    margin:10px;
 }
 
 .imagen{
@@ -118,7 +118,7 @@ body{
     pointer-events: auto;
 }
 .modalDialog > div {
-    width: 400px;
+    width: 40%;
     position: relative;
     margin: 10% auto;
     padding: 50px;
@@ -143,7 +143,7 @@ body{
     -moz-border-radius: 12px;
     border-radius: 12px;
     opacity:1;
-   
+
 }
 .close:hover { background-color: gray; }
 
@@ -153,19 +153,20 @@ body{
     padding: 50px;
     left: 0;
     right: 0;
-    margin: 10px auto;
+    /*margin: 10px auto;
     margin-bottom: 100px;
     width: 100%!important;
     position: relative;
-    border-radius: 10px;
+    border-radius: 10px;*/
+     
     color:#62bba7;
 }
 
 
 
-#containerLista .form-box{
+/*#containerLista .form-box{
     width: 50%!important;
-}
+}*/
 
 .form-groupRadio label{
     position: relative;
@@ -184,13 +185,68 @@ body{
 #nameObjeto, #descObjeto{
     background-color: #e7fbf3;
     outline: none !important;
-  /*  border-top: transparent;
-    border-left: transparent;
-    border-right:  transparent;
-    border-bottom: 5px solid #50dec5;*/
+    /*  border-top: transparent;
+      border-left: transparent;
+      border-right:  transparent;
+      border-bottom: 5px solid #50dec5;*/
     border: 0;
-  
+
     border-radius: 5px;
 
     color: #62bba7;
+}
+@media(max-width: 768px){
+    .modalDialog > div {
+        width: 80%;
+        margin: 10%;
+      
+    }
+    .navbarShidori{
+          background-color: #f7c6be!important;
+    }
+    #contenedorGd{
+    margin-top: 10px;
+    }
+    #icnlabel{
+        margin-left:10px;
+        background-color: #f7c6be;
+        border-radius: 10px;
+    }
+}
+#botones{ 
+    position: relative;
+    text-align: center;
+    width:100%;
+    left: 0;
+    right: 0;
+}
+#lol{
+    background-color:transparent;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-top:80px ;
+    margin-bottom:20px;
+    border:transparent;
+    outline: none;
+
+    width:150px;
+    padding:7px 13px;
+    text-align:center;
+    font-size:20px;
+
+    color: #ffe04a;
+
+}
+
+#lol:active{
+    vertical-align: top;
+    padding: 9px 13px 6px;
+}
+#imgEliminar:active, #imgEditar:active, #imgSeguir:active{
+    vertical-align: top;
+    padding: 2px 2px 2px;
+}
+#lol:focus{
+    border-bottom: #ffe04a 3px solid;
 }

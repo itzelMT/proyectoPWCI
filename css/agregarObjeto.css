@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 .navbarShidori #navUL{
 
-    position:fixed;
+    position:relative;
     z-index: 9999;
     top:0; 
     left: 0;
@@ -49,19 +49,22 @@ and open the template in the editor.
     right: 0;
     margin: 10px auto;
     margin-bottom: 100px;
-    width: 100%!important;
+    width: 50%!important;
     position: relative;
     border-radius: 10px;
     color:#62bba7;
 }
 
+#containerObjeto .form-box{
+    width: 100%!important;
+}
 .form-group label{
     display: none; 
 }
 
-#containerLista .form-box{
+/*#containerLista .form-box{
     width: 50%!important;
-}
+}*/
 
 .form-groupRadio label{
     position: relative;
@@ -178,5 +181,17 @@ video::-webkit-media-controls {
     -moz-border-radius: 20px;
     border-radius: 20px;
     padding-left: 15px;
+}
+
+@media(max-width: 768px){
+    .form-box{
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 100px;
+        width: 100%!important;
+    }
+    .navbarShidori{
+        background-color: #fde880!important;
+    }
 }
 

@@ -15,10 +15,13 @@ and open the template in the editor.
     <body>
         <header class="header">
             <?php include("menu.php"); ?>
-            <h1>Tus listas</h1>
         </header>
-
-        <div class="container" id="contenedorGd">
+        <div class="container" id="botones">
+            <input type="button" value="Públicas" id="lol" onclick="ocultar();">
+            <input type="button" value="Privadas" id="lol" onclick="regresar();">
+        </div>
+        <!-- Contenedor para listas publicas -->
+        <div class="container" id="contenedorPublico">
             <div class="container row">
 
                 <div class="lista col-xl col-md-4 col-sm-6 col-xs-12">
@@ -66,6 +69,7 @@ and open the template in the editor.
                     </div>
                 </div>
             </div>
+
             <div class="container row">
 
                 <div class="lista col-xl col-md-4 col-sm-6 col-xs-12">
@@ -113,23 +117,16 @@ and open the template in the editor.
                     </div>
                 </div>
             </div>
+        </div
+        
+        <!-- Contenedor para listas privadas -->
+        <div class="container" id="contenedorPrivado">
             <div class="container row">
 
                 <div class="lista col-xl col-md-4 col-sm-6 col-xs-12">
                     <div class="card ">
-                        <img src="resources/productos/choker.jpg" class="imagen">
-                        <h4 class="titulo"> Accesorios </h4>
-                    </div>
-                    <div>
-                        <a href="objetos.php"><input type="image" src="resources/seguir.png" id="imgSeguir"></a>
-                        <a href="#containerLista"><input type="image" src="resources/editar.png" id="imgEditar"></a>
-                        <input type="image" src="resources/eliminar.png" id="imgEliminar">
-                    </div>
-                </div>
-                <div class="lista col-xl col-md-4 col-sm-6 col-xs-12">
-                    <div class="card ">
-                        <img src="resources/productos/baphomet.jpg" class="imagen">
-                        <h4 class="titulo"> Peluches </h4>
+                        <img src="resources/productos/sacapuntas.png" class="imagen">
+                        <h4 class="titulo"> Papelería </h4>
                     </div>
                     <div>
                         <a href="objetos.php"><input type="image" src="resources/seguir.png" id="imgSeguir"></a>
@@ -150,8 +147,19 @@ and open the template in the editor.
                 </div>
                 <div class="lista col-xl col-md-4 col-sm-6 col-xs-12">
                     <div class="card ">
-                        <img src="resources/productos/sacapuntas.png" class="imagen">
-                        <h3 class="titulo"> Papelería </h3>
+                        <img src="resources/productos/baphomet.jpg" class="imagen">
+                        <h4 class="titulo"> Peluches </h4>
+                    </div>
+                    <div>
+                        <a href="objetos.php"><input type="image" src="resources/seguir.png" id="imgSeguir"></a>
+                        <a href="#containerLista"><input type="image" src="resources/editar.png" id="imgEditar"></a>
+                        <input type="image" src="resources/eliminar.png" id="imgEliminar">
+                    </div>
+                </div>
+                <div class="lista col-xl col-md-4 col-sm-6 col-xs-12">
+                    <div class="card ">
+                        <img src="resources/productos/choker.jpg" class="imagen">
+                        <h3 class="titulo"> Accesorios </h3>
                     </div>
                     <div>
                         <a href="objetos.php"><input type="image" src="resources/seguir.png" id="imgSeguir"></a>
@@ -161,7 +169,6 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-
         <div class="modalDialog" id="containerLista">
             <div class="form-box">
                 <div class="needs-validation" novalidate method="POST" action='addList' enctype="multipart/formdata">

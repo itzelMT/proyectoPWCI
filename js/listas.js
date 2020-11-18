@@ -13,13 +13,14 @@ function ocultarLabel(label){
     document.getElementById(label).style.display = 'none';
 }
 function ocultar() {
-    document.getElementById("containerObjeto").style.display = 'block';
-    document.getElementById("containerLista").style.display = 'none';
+    document.getElementById("contenedorPublico").style.display = 'block';
+    document.getElementById("contenedorPrivado").style.display = 'none';
+    
 }
 
 function regresar() {
-    document.getElementById("containerObjeto").style.display = 'none';
-    document.getElementById("containerLista").style.display = 'block';
+    document.getElementById("contenedorPublico").style.display = 'none';
+    document.getElementById("contenedorPrivado").style.display = 'block';
 }
 function HandleBrowseClick()
 {
